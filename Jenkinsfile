@@ -21,11 +21,11 @@ pipeline {
     }
         stage('codequality'){
         steps{
-       sh "mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=attempt-sonar \
-  -Dsonar.projectName='attempt-sonar' \
-  -Dsonar.host.url=http://34.227.18.34:9000 \
-  -Dsonar.token=sqp_45e12a8fd5e21d98d8346148ba4fdc81552922d7"
+       sh ""mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=free-sonar \
+  -Dsonar.projectName='free-sonar' \
+  -Dsonar.host.url=http://34.239.253.145:9000 \
+  -Dsonar.token=sqp_815bccc09971000eafe8c88b6846b4a090640659
       }
     }
   }
