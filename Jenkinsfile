@@ -22,10 +22,10 @@ pipeline {
         stage('codequality'){
         steps{
        sh "mvn clean verify sonar:sonar \
-  -Dsonar.projectKey=nanje-demo \
-  -Dsonar.projectName='nanje-demo' \
-  -Dsonar.host.url=http://ec2-3-86-238-50.compute-1.amazonaws.com:9000 \
-  -Dsonar.token=sqp_dccd1c306f8ebb0aa849050b2008b54008f1b3e3"
+  -Dsonar.projectKey=attempt-sonar \
+  -Dsonar.projectName='attempt-sonar' \
+  -Dsonar.host.url=http://34.227.18.34:9000 \
+  -Dsonar.token=sqp_45e12a8fd5e21d98d8346148ba4fdc81552922d7"
       }
     }
   }
